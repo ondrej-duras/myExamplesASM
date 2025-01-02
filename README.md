@@ -12,7 +12,7 @@ Here is a colletion of source codes I have recognized them as simple and yousefu
   2. to work more comfortable I preffer to help myself by "make" utility to compile everything here,
   3. so each example is in separate subdirectory
   4. each example has its own Makefile
-  5. except the FASM.EXE you need ntldd and make utility
+  5. except the FASM.EXE you need ntldd.exe and make.exe utility
   6. very fine is to have a git toolkit as well.
   7. NTLDD is taken from https://github.com/LRN/ntldd.git 
   8. NTLDD.EXE is compiled by mingw-w64
