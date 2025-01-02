@@ -1,0 +1,11 @@
+######################
+# All temporary and all executables except FASM.EXE
+# should be ignored 
+######################
+*.*~
+*~
+*.EXE
+.*
+~*
+# --- end ---
+
