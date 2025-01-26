@@ -31,7 +31,7 @@ section '.bss' data readable writeable
 
 section '.edata' export data readable
 
-  export 'WRITEMSG.DLL',\
+  export 'X_WRITEMSG.DLL',\
 	 WriteMessage,'WriteMessage'
 
 section '.reloc' fixups data readable discardable

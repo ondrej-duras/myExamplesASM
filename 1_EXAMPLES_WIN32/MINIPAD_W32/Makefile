@@ -1,7 +1,7 @@
 
 
 
-export INCLUDE=../../INCLUDE/
+export INCLUDE=../../INCLUDE_WIN/
 export ASM=../../FASM.EXE
 
 help:

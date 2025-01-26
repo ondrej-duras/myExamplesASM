@@ -19,7 +19,7 @@ section '.data' data readable
 section '.idata' import data readable writeable
 
   library kernel32,'KERNEL32.DLL',\
-	  writemsg,'WRITEMSG.DLL'
+	  writemsg,'X_WRITEMSG.DLL'
 
   include 'api/kernel32.inc'
 

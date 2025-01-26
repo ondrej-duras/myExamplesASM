@@ -1,7 +1,7 @@
 
 
 export INCLUDE=../../INCLUDE_WIN/
-export ASM=../../fasm.exe
+export ASM=../../FASM.EXE
 
 help:
 	@echo "use one of following parameters:"
@@ -12,14 +12,14 @@ help:
 all: X_ERRORMSG.DLL Y_LASTERR.EXE
 
 X_ERRORMSG.DLL: ERRORMSG.ASM
-	@echo "ASM=${ASM}"
 	@echo "INCLUDE=${INCLUDE}"
+	@echo "ASM=${ASM}"
 	${ASM} ERRORMSG.ASM X_ERRORMSG.DLL
 	@dir X_ERRORMSG.DLL
 
 Y_LASTERR.EXE: LASTERR.ASM X_ERRORMSG.DLL
-	@echo "ASM=${ASM}"
 	@echo "INCLUDE=${INCLUDE}"
+	@echo "ASM=${ASM}"
 	${ASM} LASTERR.ASM Y_LASTERR.EXE
 	@dir Y_LASTERR.EXE
 
