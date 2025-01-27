@@ -1,0 +1,7 @@
+
+
+
+tu by to chcelo v ASM aj v C/C++
+nejake priklady, ako ten .OBJ vyuzit ... vkompilovat do programu
+
+
