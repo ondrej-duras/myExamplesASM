@@ -327,7 +327,8 @@ section '.data' data readable writeable
   MsgError           TCHAR 'Carga inicial fallida',0
   szErrLectura       TCHAR 'Error leyendo gif',0
   szErrFrames        TCHAR 'Error en frames gif',0
-  szAnimGif          du    "../Res/movingwizard.gif", 0  ; UNICODE string
+  ;szAnimGif          du    "../Res/movingwizard.gif", 0  ; UNICODE string
+  szAnimGif          du    "movingwizard.gif", 0  ; UNICODE string
   szErrSinFrames     TCHAR 'gif sin frames',0
   szErrItemSize      TCHAR 'error item size',0
   szErrItemProp      TCHAR 'error en la obtención de la propiedad del item',0
@@ -367,28 +368,29 @@ section '.idata' import data readable writeable
 
 section '.rsrc' resource data readable
 
-;  ; resource directory
-;  directory RT_ICON,icons,\
-;            RT_GROUP_ICON,group_icons,\
-;            RT_VERSION,versions
-;
-;  ; resource subdirectories
-;  resource icons,\
-;       1,LANG_NEUTRAL,icon_data
-;
-;  resource group_icons,\
-;           cdMainIcon, LANG_NEUTRAL, main_icon
-;
-;  resource versions,\
-;       1,LANG_NEUTRAL,version
-;
-;  icon main_icon, icon_data,  '../Res/a64.ico'
-;
-;  versioninfo version,VOS__WINDOWS32,VFT_APP,VFT2_UNKNOWN,LANG_SPANISH+SUBLANG_DEFAULT,0,\
-;              'FileDescription','Prog. 64 bits en Windows',\
-;              'InternalName', 'Win64Prog',\
-;              'ProductName', 'Win64Prog',\
-;              'LegalCopyright','All Rights Reserved',\
-;              'FileVersion','1.0.0',\
-;              'ProductVersion','1.0.0',\
-;              'CompanyName', '(c) abreojosensamblador.net'
+  ; resource directory
+  directory RT_ICON,icons,\
+            RT_GROUP_ICON,group_icons,\
+            RT_VERSION,versions
+
+  ; resource subdirectories
+  resource icons,\
+       1,LANG_NEUTRAL,icon_data
+
+  resource group_icons,\
+           cdMainIcon, LANG_NEUTRAL, main_icon
+
+  resource versions,\
+       1,LANG_NEUTRAL,version
+
+  ;icon main_icon, icon_data,  '../Res/a64.ico'
+  icon main_icon, icon_data,  'a64.ico'
+
+  versioninfo version,VOS__WINDOWS32,VFT_APP,VFT2_UNKNOWN,LANG_SPANISH+SUBLANG_DEFAULT,0,\
+              'FileDescription','Prog. 64 bits en Windows',\
+              'InternalName', 'Win64Prog',\
+              'ProductName', 'Win64Prog',\
+              'LegalCopyright','All Rights Reserved',\
+              'FileVersion','1.0.0',\
+              'ProductVersion','1.0.0',\
+              'CompanyName', '(c) abreojosensamblador.net'

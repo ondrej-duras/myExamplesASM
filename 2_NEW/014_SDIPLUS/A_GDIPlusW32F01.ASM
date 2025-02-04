@@ -325,7 +325,8 @@ section '.data' data readable writeable
   MsgError            TCHAR    'Carga inicial fallida.',0
   szErrLectura        TCHAR 'Error leyendo gif',0
   szErrFrames         TCHAR 'Error en frames gif',0
-  szAnimGif           du    "../Res/movingwizard.gif", 0  ; UNICODE string
+  ;szAnimGif           du    "../Res/movingwizard.gif", 0  ; UNICODE string
+  szAnimGif           du    "movingwizard.gif", 0  ; UNICODE string
   szErrSinFrames      TCHAR 'gif sin frames',0
   szErrItemSize       TCHAR 'error item size',0
   szErrItemProp       TCHAR 'error en la obtención de la propiedad del item',0
@@ -381,7 +382,8 @@ section '.rsrc' resource data readable
   resource versions,\
        1,LANG_NEUTRAL,version
 
-  icon main_icon, icon_data,  '../Res/a.ico'
+  ;icon main_icon, icon_data,  '../Res/a.ico'
+  icon main_icon, icon_data,  'a.ico'
 
   versioninfo version,VOS__WINDOWS32,VFT_APP,VFT2_UNKNOWN,LANG_SPANISH+SUBLANG_DEFAULT,0,\
               'FileDescription','Prog. 32 bits en Windows',\

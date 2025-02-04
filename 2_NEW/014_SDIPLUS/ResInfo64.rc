@@ -1,0 +1,33 @@
+#define IDR_VERSION1   1
+#define MAIN_ICON    100
+
+LANGUAGE 10,1
+
+IDR_VERSION1 VERSIONINFO
+FILEVERSION 1,0,0,0
+PRODUCTVERSION 1,0,0,0
+FILEOS 0x00000004
+FILETYPE 0x00000000
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "FFFF0000"
+    BEGIN
+      VALUE "Comments", "Programación Win64, Win64 Programming\0"
+      VALUE "FileVersion", "1.0.0.0\0"
+      VALUE "ProductVersion", "1.0.0.0\0"
+      VALUE "CompanyName", "(c) abreojosensamblador.net\0"
+      VALUE "FileDescription", "Prog. 64 bits en Windows\0"
+      VALUE "InternalName", "Win64Prog\0"
+      VALUE "LegalCopyright", "All Rights Reserved\0"
+      VALUE "ProductName", "Win64Prog\0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0xFFFF, 0x0000
+  END
+END
+
+MAIN_ICON   ICON DISCARDABLE "a64.ico"
+
