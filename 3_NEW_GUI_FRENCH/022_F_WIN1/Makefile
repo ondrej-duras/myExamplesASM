@@ -11,18 +11,18 @@ help:
 	@echo "  make clean .... delete"
 	@echo "  make ldd ...... check"
 
-all: 1_F_MSGBOX.EXE 
+all: 1_F_WIN1.EXE 
 
-1_F_MSGBOX.EXE: A_F_MSGBOX.ASM B_FRANCE.ICO 
-	${ASM} A_F_MSGBOX.ASM 1_F_MSGBOX.EXE
-	dir 1_F_MSGBOX.EXE
+1_F_WIN1.EXE: A_F_WIN1.ASM B_FRANCE.ICO 
+	${ASM} A_F_WIN1.ASM 1_F_WIN1.EXE
+	dir 1_F_WIN1.EXE
 
 clean:
-	CMD.EXE /C DEL 1_F_MSGBOX.EXE
+	CMD.EXE /C DEL 1_F_WIN1.EXE
 
 ldd:
-	file  1_F_MSGBOX.EXE
-	ntldd 1_F_MSGBOX.EXE
+	file  1_F_WIN1.EXE
+	ntldd 1_F_WIN1.EXE
 
 # --- end ---
 
